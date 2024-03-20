@@ -7,6 +7,7 @@
 
 #include "MainPage.g.h"
 using namespace Windows::UI::Core;
+using namespace Windows::Storage;
 
 namespace ProjectN
 {
@@ -20,8 +21,11 @@ namespace ProjectN
 	public:
 		MainPage();
 
-
 		void SelectFolder_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+
+		void GetFileNamesList(StorageFolder^ folder);
+
+		
 
 	};
 }
